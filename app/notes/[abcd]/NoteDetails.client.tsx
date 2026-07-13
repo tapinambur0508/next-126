@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useQuery } from "@tanstack/react-query";
 import { getNote } from "@/lib/api";
 
 function NoteDetailsClient() {
   const { abcd } = useParams<{ abcd: string }>();
+  const router = useRouter();
 
   const [isEdit, setIsEdit] = useState<boolean>(false);
 
@@ -16,12 +17,20 @@ function NoteDetailsClient() {
     refetchOnMount: false,
   });
 
+  const handleBack = () => {
+    if (confirm("Are you sure?")) {
+      // router.back();
+      router.push("/notes");
+    }
+  };
+
   const toggleEdit = () => {
     setIsEdit((prevIsEdit) => !prevIsEdit);
   };
 
   return (
     <>
+      <button onClick={handleBack}>Back</button>
       <button onClick={() => toggleEdit()}>Edit</button>
 
       {isEdit ? (
