@@ -11,9 +11,15 @@ function Profile() {
 
   return (
     <PageContainer
+      flush
       title="Profile"
       description="View and update your account settings."
-    />
+    >
+      <p className="text-muted">
+        Your account is ready. Use the tabs above to manage settings and
+        notifications.
+      </p>
+    </PageContainer>
   );
 }
 

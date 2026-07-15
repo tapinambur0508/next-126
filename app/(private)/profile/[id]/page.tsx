@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation";
 
+import PageContainer from "@/components/PageContainer/PageContainer";
+
 interface UserProfileProps {
   params: Promise<{ id: string }>;
 }
@@ -12,9 +14,11 @@ async function UserProfile({ params }: UserProfileProps) {
   }
 
   return (
-    <div>
-      <h1>User {id}</h1>
-    </div>
+    <PageContainer
+      flush
+      title={`User ${id}`}
+      description="Public profile view for this account."
+    />
   );
 }
 

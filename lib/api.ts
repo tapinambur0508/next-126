@@ -1,6 +1,7 @@
 import axios from "axios";
 
 import type { Note } from "@/types/note";
+import type { Category } from "@/types/category";
 
 const API = axios.create({
   baseURL: "https://next-v1-notes-api.goit.study",
@@ -24,11 +25,16 @@ export async function getNotes(
       } catch (error) {
         reject(error);
       }
-    }, 5000);
+    }, 0);
   });
 }
 
 export async function getNote(id: Note["id"]): Promise<Note> {
   const { data } = await API.get<Note>(`/notes/${id}`);
+  return data;
+}
+
+export async function getCategories(): Promise<Category[]> {
+  const { data } = await API.get<Category[]>("/categories");
   return data;
 }
