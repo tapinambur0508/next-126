@@ -1,8 +1,14 @@
 import ProfileNav from "@/components/ProfileNav/ProfileNav";
+import { Metadata } from "next";
 
 interface ProfileLayoutProps {
   children: React.ReactNode;
 }
+
+export const metadata: Metadata = {
+  title: "Profile | NoteHub",
+  description: "Your profile on NoteHub",
+};
 
 function ProfileLayout({ children }: ProfileLayoutProps) {
   return (

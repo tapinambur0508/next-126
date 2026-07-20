@@ -1,6 +1,12 @@
 import NoteList from "@/components/NoteList/NoteList";
 
 import { getNotes } from "@/lib/api";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Notes | NotesHub",
+  description: "Your Notes on NoteHub",
+};
 
 interface NoteFilterCategoriesProps {
   params: Promise<{ slug: string[] }>;

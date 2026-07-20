@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -40,6 +41,188 @@ export default function Home() {
             About NoteHub
           </Link>
         </div>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae autem,
+          nisi asperiores accusantium voluptatibus quidem ipsum dolores natus
+          excepturi, laboriosam at doloremque. Amet magnam omnis iusto aperiam,
+          cumque id. At?
+        </p>
+
+        <Image
+          src="https://cataas.com/cat/says/Hello"
+          width={200}
+          height={100}
+          alt="Note"
+        />
       </div>
     </section>
   );
