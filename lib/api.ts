@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import type { Note } from "@/types/note";
+import type { Note, CreateNotePayload } from "@/types/note";
 import type { Category } from "@/types/category";
 
 const API = axios.create({
@@ -31,6 +31,11 @@ export async function getNotes(
 
 export async function getNote(id: Note["id"]): Promise<Note> {
   const { data } = await API.get<Note>(`/notes/${id}`);
+  return data;
+}
+
+export async function createNote(payload: CreateNotePayload): Promise<Note> {
+  const { data } = await API.post<Note>("/notes", payload);
   return data;
 }
 
