@@ -6,7 +6,7 @@ export interface Note {
     id: string;
     name: string;
   };
-  cratedAt: string;
+  createdAt: string;
 }
 
 export interface CreateNotePayload {

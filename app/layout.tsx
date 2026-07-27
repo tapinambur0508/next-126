@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import AuthProvider from "@/components/AuthProvider/AuthProvider";
 import TanstackProvider from "@/components/TanstackProvider/TanstackProvider";
 
 const fraunces = Fraunces({
@@ -37,12 +38,14 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <TanstackProvider>
-          <Header />
-          <main className="flex-1">
-            {children}
-            {modal}
-          </main>
-          <Footer />
+          <AuthProvider>
+            <Header />
+            <main className="flex-1">
+              {children}
+              {modal}
+            </main>
+            <Footer />
+          </AuthProvider>
         </TanstackProvider>
       </body>
     </html>
