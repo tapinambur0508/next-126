@@ -1,15 +1,43 @@
 import { NextResponse, NextRequest } from "next/server";
+import { cookies } from "next/headers";
+import { parseCookie } from "cookie";
 
 import { api, type ApiError } from "../../api";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { data } = await api.post("/auth/register", body, {
+    const { data, headers } = await api.post("/auth/register", body, {
       headers: {
         "Content-Type": "application/json",
       },
     });
+
+    const cookieStore = await cookies();
+
+    const setCookie = headers["set-cookie"];
+
+    if (setCookie !== undefined) {
+      const cookieArray = Array.isArray(setCookie) ? setCookie : [setCookie];
+
+      for (const cookieString of cookieArray) {
+        const parsed = parseCookie(cookieString);
+
+        const options = {
+          expires: parsed.Expires ? new Date(parsed.Expires) : undefined,
+          path: parsed.Path,
+          maxAge: Number(parsed["Max-Age"]),
+        };
+
+        if (parsed.accessToken !== undefined) {
+          cookieStore.set("accessToken", parsed.accessToken, options);
+        }
+
+        if (parsed.refreshToken !== undefined) {
+          cookieStore.set("refreshToken", parsed.refreshToken, options);
+        }
+      }
+    }
 
     return NextResponse.json(data, { status: 201 });
   } catch (error) {

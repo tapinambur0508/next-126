@@ -1,11 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
+import { logout } from "@/lib/api";
 import { useAuthStore } from "@/store/authStore";
 
 function UserMenu() {
-  const { isAuthenticated, user } = useAuthStore();
+  const router = useRouter();
+  const { isAuthenticated, user, clearIsAuthenticated } = useAuthStore();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      clearIsAuthenticated();
+      router.push("/sign-in");
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   if (isAuthenticated !== true) {
     return (
@@ -31,14 +44,25 @@ function UserMenu() {
   }
 
   return (
-    <Link
-      href="/profile"
-      className="relative px-2.5 py-1.5 text-sm font-medium text-muted transition-colors duration-200 hover:text-foreground sm:px-3"
-    >
-      <span className="after:absolute after:inset-x-2.5 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-200 hover:after:scale-x-100 sm:after:inset-x-3">
-        {user?.userName}
-      </span>
-    </Link>
+    <>
+      <Link
+        href="/profile"
+        className="relative px-2.5 py-1.5 text-sm font-medium text-muted transition-colors duration-200 hover:text-foreground sm:px-3"
+      >
+        <span className="after:absolute after:inset-x-2.5 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-200 hover:after:scale-x-100 sm:after:inset-x-3">
+          {user?.userName}
+        </span>
+      </Link>
+      <button
+        type="button"
+        onClick={handleLogout}
+        className="relative px-2.5 py-1.5 text-sm font-medium text-muted transition-colors duration-200 hover:text-foreground sm:px-3"
+      >
+        <span className="after:absolute after:inset-x-2.5 after:bottom-0.5 after:h-px after:origin-left after:scale-x-0 after:bg-accent after:transition-transform after:duration-200 hover:after:scale-x-100 sm:after:inset-x-3">
+          Log out
+        </span>
+      </button>
+    </>
   );
 }
 
